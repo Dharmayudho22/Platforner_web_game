@@ -4,6 +4,8 @@ const ASPECT_RATIO = {
 };
 
 const DISPLAY_PIXEL = {
-    width: 80,  // DIUBAH: 64→80, supaya canvas 1280x720 (fullscreen)
-    height: 45  // DIUBAH: 64→45
+    width: 80,
+    height: 45  
 }
+
+const LEVEL_WIDTH = 80 * 16 * 3;

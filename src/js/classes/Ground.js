@@ -5,7 +5,8 @@ class Ground {
         this.bgImage = new Image();
         this.bgImage.src = props.bgSrc;
 
-        // load semua tile image dari path langsung
+        this.levelWidth = props.levelWidth || 3840;
+
         this.tiles = props.tiles.map(tile => ({
             ...tile,
             img: (() => {
@@ -17,18 +18,23 @@ class Ground {
     }
 
     drawBackground() {
-        board.drawImage(this.bgImage, 0, 0, canvas.width, canvas.height);
+        for (let x = 0; x < this.levelWidth; x += canvas.width) {
+            board.drawImage(
+                this.bgImage,
+                x, 0, canvas.width + 1, canvas.height
+            );
+        }
     }
 
     create() {
         this.drawBackground();
         this.tiles.forEach(tile => {
-            const w = tile.w || this.tileSize;  
+            const w = tile.w || this.tileSize;
             const h = tile.h || this.tileSize;
             board.drawImage(
                 tile.img,
                 0, 0, 16, 16,
-                tile.x, tile.y, w, h  
+                tile.x, tile.y, w, h
             );
         });
     }

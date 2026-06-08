@@ -90,30 +90,26 @@ class Player {
         this.position.x += this.velocity.x;
         this.position.y += this.velocity.y;
 
-        if(this.position.y >= ground){
+        if (this.position.y >= ground) {
             this.position.y = ground;
             this.velocity.y = 0;
             this.jumpCount = 0;
         }
 
-        // batasi player tidak keluar layar
         if (this.position.x < 0) this.position.x = 0;
-        if (this.position.x + this.width > canvas.width) {
-            this.position.x = canvas.width - this.width;
+
+        if (typeof LEVEL_WIDTH !== "undefined") {
+            if (this.position.x + this.width > LEVEL_WIDTH) {
+                this.position.x = LEVEL_WIDTH - this.width;
+            }
         }
 
-        // DITAMBAH: kurangi timer invincible tiap frame
-        if(this.invincible > 0) this.invincible--;
+        if (this.invincible > 0) this.invincible--;
 
-        if(this.velocity.y < 0){
-            this.currentAnimation = "jump";
-        } else if(this.velocity.y > 1){
-            this.currentAnimation = "fall";
-        } else if(this.velocity.x !== 0){
-            this.currentAnimation = "run";
-        } else {
-            this.currentAnimation = "idle";
-        }
+        if (this.velocity.y < 0)       this.currentAnimation = "jump";
+        else if (this.velocity.y > 1)  this.currentAnimation = "fall";
+        else if (this.velocity.x !== 0) this.currentAnimation = "run";
+        else                            this.currentAnimation = "idle";
     }
 
     create() {
