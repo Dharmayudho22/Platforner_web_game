@@ -14,6 +14,12 @@ https://dharmayudho22.github.io/Platforner_web_game/
 
 ---
 
+## 📸 Preview
+
+![Game Preview](src/assets/tampilan/image.png)
+
+---
+
 ## 🎯 Features
 
 ### Player Mechanics
