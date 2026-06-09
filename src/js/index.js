@@ -61,8 +61,10 @@ const ground = new Ground({
 });
 
 const dekorasi = new Dekorasi([
-    { src: "src/assets/Tiles/tile_0010.png", x: 150,  y: GY - 96, w: 48, h: 96 },
-    { src: "src/assets/Tiles/tile_0010.png", x: 600,  y: GY - 96, w: 48, h: 96 },
+    { src: "src/assets/Tiles/tile_0011.png", x: 150,  y: GY - 96, w: 48, h: 96 },
+    { src: "src/assets/Tiles/tile_0009.png", x: 110,  y: GY - 96, w: 48, h: 96 },
+    { src: "src/assets/Tiles/tile_0011.png", x: 600,  y: GY - 96, w: 48, h: 96 },
+    { src: "src/assets/Tiles/tile_0009.png", x: 560,  y: GY - 96, w: 48, h: 96 },
     { src: "src/assets/Tiles/tile_0010.png", x: 1100, y: GY - 96, w: 48, h: 96 },
     { src: "src/assets/Tiles/tile_0010.png", x: 1600, y: GY - 96, w: 48, h: 96 },
     { src: "src/assets/Tiles/tile_0010.png", x: 2100, y: GY - 96, w: 48, h: 96 },
@@ -223,7 +225,7 @@ function drawMenu() {
 
     board.fillStyle = "white";
     board.font      = "28px Arial";
-    board.fillText("Injak musuh untuk mengalahkan mereka!", canvas.width / 2, canvas.height / 2);
+    board.fillText("Injak musuh untuk mengalahkan mereka! dan mendapatkan point untuk naik levelnya", canvas.width / 2, canvas.height / 2);
     board.fillText("Hindari spike dan saw!", canvas.width / 2, canvas.height / 2 + 40);
 
     board.fillStyle = "#2ecc71";
