@@ -2,8 +2,6 @@
 
 A 2D platformer game built with **Vanilla JavaScript** and **HTML5 Canvas** — no frameworks, no libraries.
 
-![Game Preview](src/assets/tampilan/image.png)
-
 ## 🎮 Play Now
 👉 **[Live Demo](https://dharmayudho22.github.io/Platforner_web_game/)** — Play directly in browser!
 
@@ -43,62 +41,58 @@ A 2D platformer game built with **Vanilla JavaScript** and **HTML5 Canvas** — 
 
 ## 🗂️ Project Structure
 
-```
-PLATFORMER/
-├── index.html
-├── src/
-│   ├── assets/
-│   │   ├── background/     # Background images
-│   │   ├── player/         # Player sprites (32x32)
-│   │   ├── musuh/          # Enemy sprites (32x32)
-│   │   ├── terrain/        # Terrain spritesheet
-│   │   ├── Tiles/          # Kenney tile assets
-│   │   └── Traps/          # Trap assets (Spikes, Saw, etc.)
-│   ├── js/
-│   │   ├── classes/
-│   │   │   ├── Player.js       # Player movement, animation, HP
-│   │   │   ├── Musuh.js        # Enemy patrol AI
-│   │   │   ├── Ground.js       # Background + tile rendering
-│   │   │   ├── Camera.js       # Camera follow system
-│   │   │   ├── Collision.js    # AABB collision detection
-│   │   │   ├── Dekorasi.js     # Decorative elements
-│   │   │   └── Traps.js        # Spike, Saw, Moving Platform
-│   │   ├── constant.js         # Global constants (canvas size, level width)
-│   │   └── index.js            # Game loop, level data, input handling
-│   └── style/
-│       └── global.css
-```
+    PLATFORMER/
+    ├── index.html
+    ├── src/
+    │   ├── assets/
+    │   │   ├── background/     # Background images
+    │   │   ├── player/         # Player sprites (32x32)
+    │   │   ├── musuh/          # Enemy sprites (32x32)
+    │   │   ├── terrain/        # Terrain spritesheet
+    │   │   ├── Tiles/          # Kenney tile assets
+    │   │   └── Traps/          # Trap assets (Spikes, Saw, etc.)
+    │   ├── js/
+    │   │   ├── classes/
+    │   │   │   ├── Player.js       # Player movement, animation, HP
+    │   │   │   ├── Musuh.js        # Enemy patrol AI
+    │   │   │   ├── Ground.js       # Background + tile rendering
+    │   │   │   ├── Camera.js       # Camera follow system
+    │   │   │   ├── Collision.js    # AABB collision detection
+    │   │   │   ├── Dekorasi.js     # Decorative elements
+    │   │   │   └── Traps.js        # Spike, Saw, Moving Platform
+    │   │   ├── constant.js         # Global constants
+    │   │   └── index.js            # Game loop, level data, input
+    │   └── style/
+    │       └── global.css
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Vanilla JavaScript** (ES6+)
-- **HTML5 Canvas API**
-- **No external libraries or frameworks**
-- Sprite-based animation system
-- AABB collision detection
+| | |
+|---|---|
+| Language | Vanilla JavaScript (ES6+) |
+| Rendering | HTML5 Canvas API |
+| Libraries | None — built from scratch |
+| Collision | Custom AABB detection |
+| Animation | Sprite sheet frame system |
 
 ---
 
 ## 🚀 Run Locally
 
-```bash
-# Clone repo
-git clone https://github.com/dharmayudho22/Platforner_web_game.git
+    git clone https://github.com/dharmayudho22/Platforner_web_game.git
 
-# Buka dengan Live Server (VS Code extension)
-# atau langsung buka index.html di browser
-```
+Buka dengan **Live Server** (VS Code extension) atau jalankan via localhost.
 
-> ⚠️ Harus dijalankan via server (Live Server / localhost) karena menggunakan asset loading. Tidak bisa dibuka langsung sebagai file lokal.
+> ⚠️ Tidak bisa dibuka langsung sebagai file lokal karena menggunakan asset loading.
 
 ---
 
-## 🎨 Assets
+## 🎨 Assets Credit
 
 - **Characters & Enemies** — Custom pixel art sprites
-- **Tiles & Terrain** — [Kenney Tiny Town](https://kenney.nl/assets/tiny-town) (CC0)
+- **Tiles & Terrain** — [Kenney Tiny Town](https://kenney.nl/assets/tiny-town) (CC0 License)
 - **Traps** — Free platformer trap assets
 
 ---
@@ -107,7 +101,7 @@ git clone https://github.com/dharmayudho22/Platforner_web_game.git
 
 - [ ] Sound effects & background music
 - [ ] More levels
-- [ ] High score (localStorage)
+- [ ] High score with localStorage
 - [ ] Mobile touch controls
 - [ ] Parallax background
 
@@ -116,3 +110,7 @@ git clone https://github.com/dharmayudho22/Platforner_web_game.git
 ## 👤 Author
 
 **Yudho** — Made with ☕ and lots of debugging
+
+---
+
+⭐ If you like this project, give it a star!
