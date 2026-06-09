@@ -1,6 +1,6 @@
 # 🎮 Platformer Game
 
-A 2D platformer game built entirely with **Vanilla JavaScript** and the **HTML5 Canvas API**, without using any game engines or external frameworks.
+A 2D platformer game built entirely with Vanilla JavaScript and the HTML5 Canvas API, without using any game engines or external frameworks.
 
 This project demonstrates core game development concepts including player physics, collision detection, enemy AI, camera systems, moving platforms, and game state management.
 
@@ -55,12 +55,11 @@ https://dharmayudho22.github.io/Platforner_web_game/
 
 | Key | Action |
 |------|---------|
-| **A** / ← | Move Left |
-| **D** / → | Move Right |
-| **W** / ↑ | Jump |
-| **Space** / **Enter** | Start Game / Continue |
-| **R** | Restart After Game Over |
-
+| A / ← | Move Left |
+| D / → | Move Right |
+| W / ↑ | Jump |
+| Space / Enter | Start Game / Continue |
+| R | Restart After Game Over |
 ### Tips
 
 ✅ Jump on enemies to defeat them and earn points.
@@ -200,7 +199,7 @@ Free Platformer Trap Assets
 
 ## 👨‍💻 Author
 
-**Dharmayudho (Yudho)**
+Dharmayudho (Yudho)
 
 Frontend Developer & Game Development Enthusiast
 
