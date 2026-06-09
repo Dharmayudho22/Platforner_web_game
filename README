@@ -1,116 +1,212 @@
-# 🐸 Platformer Game
+# 🎮 Platformer Game
 
-A 2D platformer game built with **Vanilla JavaScript** and **HTML5 Canvas** — no frameworks, no libraries.
+A 2D platformer game built entirely with **Vanilla JavaScript** and the **HTML5 Canvas API**, without using any game engines or external frameworks.
 
-## 🎮 Play Now
-👉 **[Live Demo](https://dharmayudho22.github.io/Platforner_web_game/)** — Play directly in browser!
+This project demonstrates core game development concepts including player physics, collision detection, enemy AI, camera systems, moving platforms, and game state management.
 
 ---
 
-## 🕹️ How to Play
+## 🌐 Live Demo
+
+🚀 Play Online:
+
+https://dharmayudho22.github.io/Platforner_web_game/
+
+---
+
+## 📸 Preview
+
+![Game Preview](src/assets/background/Pink.png)
+
+---
+
+## 🎯 Features
+
+### Player Mechanics
+- Smooth left/right movement
+- Jump and double jump
+- Health system (3 HP)
+- Temporary invincibility after taking damage
+- Sprite-based animations
+
+### Enemy System
+- Patrol AI movement
+- Stomp-to-defeat mechanic
+- Score rewards for defeating enemies
+
+### Level Elements
+- Static platforms
+- Horizontal moving platforms
+- Vertical moving platforms
+- Spike traps
+- Rotating saw hazards
+
+### Game Systems
+- Camera follow system
+- Score tracking
+- Level progression
+- Level Complete screen
+- Game Over screen
+- Win screen
+
+---
+
+## 🎮 Controls
 
 | Key | Action |
-|-----|--------|
-| `W` / `Arrow Up` | Jump (double jump supported!) |
-| `A` / `Arrow Left` | Move Left |
-| `D` / `Arrow Right` | Move Right |
-| `Enter` / `Space` | Start / Next Level |
-| `R` | Restart after Game Over |
+|------|---------|
+| **A** / ← | Move Left |
+| **D** / → | Move Right |
+| **W** / ↑ | Jump |
+| **Space** / **Enter** | Start Game / Continue |
+| **R** | Restart After Game Over |
 
-**Tips:**
-- 🦵 **Stomp enemies** by jumping on top of them — +100 score each!
-- ⚠️ Avoid **spikes** and **rotating saws**
-- 🏆 Clear all enemies to advance to the next level
-- ❤️ You have **3 HP** — take damage carefully
+### Tips
 
----
+✅ Jump on enemies to defeat them and earn points.
 
-## ✨ Features
+⚠️ Avoid spikes and rotating saws.
 
-- **2 Levels** with increasing difficulty
-- **Moving platforms** — horizontal & vertical
-- **Enemy patrol AI** with stomp mechanic
-- **Traps** — spikes and rotating saws
-- **Double jump**
-- **Camera system** that follows the player
-- **HP system** with invincibility frames
-- **Score system** with level clear bonus
-- **Game states** — Menu, Playing, Level Clear, Game Over, Win
+🏆 Defeat all enemies to clear the level.
+
+❤️ You only have 3 HP, so move carefully.
 
 ---
 
-## 🗂️ Project Structure
+## 🛠️ Technical Highlights
 
-    PLATFORMER/
-    ├── index.html
-    ├── src/
-    │   ├── assets/
-    │   │   ├── background/     # Background images
-    │   │   ├── player/         # Player sprites (32x32)
-    │   │   ├── musuh/          # Enemy sprites (32x32)
-    │   │   ├── terrain/        # Terrain spritesheet
-    │   │   ├── Tiles/          # Kenney tile assets
-    │   │   └── Traps/          # Trap assets (Spikes, Saw, etc.)
-    │   ├── js/
-    │   │   ├── classes/
-    │   │   │   ├── Player.js       # Player movement, animation, HP
-    │   │   │   ├── Musuh.js        # Enemy patrol AI
-    │   │   │   ├── Ground.js       # Background + tile rendering
-    │   │   │   ├── Camera.js       # Camera follow system
-    │   │   │   ├── Collision.js    # AABB collision detection
-    │   │   │   ├── Dekorasi.js     # Decorative elements
-    │   │   │   └── Traps.js        # Spike, Saw, Moving Platform
-    │   │   ├── constant.js         # Global constants
-    │   │   └── index.js            # Game loop, level data, input
-    │   └── style/
-    │       └── global.css
+Built from scratch without external libraries:
+
+- Game loop using `requestAnimationFrame`
+- AABB collision detection
+- Camera tracking system
+- Sprite animation handling
+- Enemy patrol AI
+- Moving platform logic
+- Level management system
+- State management (Menu, Playing, Clear, Game Over, Win)
 
 ---
 
-## 🛠️ Tech Stack
+## 🏗️ Project Structure
 
-| | |
-|---|---|
-| Language | Vanilla JavaScript (ES6+) |
-| Rendering | HTML5 Canvas API |
-| Libraries | None — built from scratch |
-| Collision | Custom AABB detection |
-| Animation | Sprite sheet frame system |
+```text
+PLATFORMER/
+├── index.html
+├── src/
+│
+├── assets/
+│   ├── background/
+│   ├── player/
+│   ├── musuh/
+│   ├── terrain/
+│   ├── Tiles/
+│   └── Traps/
+│
+├── js/
+│   ├── classes/
+│   │   ├── Player.js
+│   │   ├── Musuh.js
+│   │   ├── Ground.js
+│   │   ├── Camera.js
+│   │   ├── Collision.js
+│   │   ├── Dekorasi.js
+│   │   └── Traps.js
+│   │
+│   ├── constant.js
+│   └── index.js
+│
+└── style/
+    └── global.css
+```
+
+---
+
+## 💻 Tech Stack
+
+- Vanilla JavaScript (ES6+)
+- HTML5 Canvas API
+- CSS3
+- Object-Oriented Programming (OOP)
+- Sprite Animation
+- AABB Collision Detection
 
 ---
 
 ## 🚀 Run Locally
 
-    git clone https://github.com/dharmayudho22/Platforner_web_game.git
+Clone the repository:
 
-Buka dengan **Live Server** (VS Code extension) atau jalankan via localhost.
+```bash
+git clone https://github.com/dharmayudho22/Platforner_web_game.git
+```
 
-> ⚠️ Tidak bisa dibuka langsung sebagai file lokal karena menggunakan asset loading.
+Open the project using:
+
+- VS Code + Live Server
+- Any local HTTP server
+
+Example:
+
+```bash
+npx serve .
+```
+
+> Assets are loaded dynamically, so the game must be served through a local web server and cannot be opened directly through the file system.
 
 ---
 
-## 🎨 Assets Credit
+## 📚 What I Learned
 
-- **Characters & Enemies** — Custom pixel art sprites
-- **Tiles & Terrain** — [Kenney Tiny Town](https://kenney.nl/assets/tiny-town) (CC0 License)
-- **Traps** — Free platformer trap assets
+Through this project I practiced:
+
+- Building a game architecture using JavaScript classes
+- Implementing collision detection systems
+- Managing game states and level progression
+- Creating reusable game objects
+- Handling sprite animations
+- Debugging gameplay interactions
+- Optimizing rendering with Canvas API
 
 ---
 
-## 📌 Roadmap
+## 🎨 Assets & Credits
 
-- [ ] Sound effects & background music
-- [ ] More levels
-- [ ] High score with localStorage
+### Environment
+Kenney Tiny Town (CC0)
+
+https://kenney.nl/assets/tiny-town
+
+### Characters & Enemies
+Custom Pixel Art Sprites
+
+### Traps
+Free Platformer Trap Assets
+
+---
+
+## 📈 Future Improvements
+
+- [ ] Sound effects
+- [ ] Background music
+- [ ] Additional levels
+- [ ] Save high scores with localStorage
 - [ ] Mobile touch controls
-- [ ] Parallax background
+- [ ] Parallax backgrounds
+- [ ] Collectible items
+- [ ] Checkpoint system
 
 ---
 
-## 👤 Author
+## 👨‍💻 Author
 
-**Yudho** — Made with ☕ and lots of debugging
+**Dharmayudho (Yudho)**
+
+Frontend Developer & Game Development Enthusiast
+
+GitHub:
+https://github.com/dharmayudho22
 
 ---
 
-⭐ If you like this project, give it a star!
+⭐ If you found this project interesting, feel free to give it a star on GitHub.
